@@ -37,8 +37,8 @@ code-server --install-extension ryanolsonx.solarized
 code-server --install-extension ms-vscode.sublime-keybindings
 
 # move settings.json to .vscode directory
-cp ./settings.json ../.vscode/settings.json 
+cp .brev/settings.json ../.vscode/settings.json 
 
 # copy over bash_profile and source it 
-echo "$(cat .brev/.bash_profile)" > ~/.bashrc
+cat .brev/.bash_profile >> ~/.bashrc
 source ~/.bashrc
