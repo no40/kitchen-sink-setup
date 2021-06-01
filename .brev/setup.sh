@@ -29,3 +29,16 @@ rm get-pip.py
 
 source $HOME/.poetry/env
 
+# install vs code extensions 
+code-server --install-extension esbenp.prettier-vscode
+code-server --install-extension dbaeumer.vscode-eslint
+code-server --install-extension golang.go
+code-server --install-extension ryanolsonx.solarized
+code-server --install-extension ms-vscode.sublime-keybindings
+
+# move settings.json to .vscode directory
+cp .brev/settings.json ../.vscode/settings.json 
+
+# copy over bash_profile and source it 
+echo "$(cat .brev/.bash_profile)" > ~/.zshrc
+source ~/.zshrc
