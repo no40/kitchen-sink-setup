@@ -8,26 +8,26 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "zsh" >> ~/.bashrc
 
 # install node
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt-get install -y nodejs
+# curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+# sudo apt-get install -y nodejs
 
 # to use makefiles
 sudo apt-get install -y build-essential
 
 # python, pip, poetry
-sudo apt-get install -y python3-distutils
+# sudo apt-get install -y python3-distutils
 
-sudo apt-get install -y python3-apt
+# sudo apt-get install -y python3-apt
 
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
-python3 get-pip.py
+# python3 get-pip.py
 
-rm get-pip.py
+# rm get-pip.py
 
-source $HOME/.poetry/env
+# source $HOME/.poetry/env
 
 # install vs code extensions 
 code-server --install-extension esbenp.prettier-vscode
@@ -40,5 +40,5 @@ code-server --install-extension ms-vscode.sublime-keybindings
 cp .brev/settings.json ../.vscode/settings.json 
 
 # copy over bash_profile and source it 
-cat .brev/.bash_profile >> ~/.bashrc
-source ~/.bashrc
+cat .brev/.bash_profile >> ~/.zshrc
+source ~/.zshrc
