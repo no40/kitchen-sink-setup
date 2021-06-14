@@ -35,6 +35,7 @@ code-server --install-extension dbaeumer.vscode-eslint
 code-server --install-extension golang.go
 code-server --install-extension ryanolsonx.solarized
 code-server --install-extension ms-vscode.sublime-keybindings
+code-server --install-extension ms-azuretools.vscode-docker
 
 # move settings.json to .vscode directory
 cp .brev/settings.json ../.vscode/settings.json 
